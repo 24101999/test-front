@@ -425,6 +425,9 @@ footer {
   }
 }
 @media (min-width: 320px) and (max-width: 768px) {
+  .carrossel {
+    background: none;
+  }
   .swiper {
     width: 100%;
   }
