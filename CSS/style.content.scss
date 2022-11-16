@@ -414,7 +414,23 @@ footer {
     }
   }
 }
+@media (min-width: 475px) and (max-width: 767px) {
+  .blocks-selecao-servicos {
+    flex-direction: row !important;
+  }
+}
+@media (min-width: 320px) and (max-width: 475px) {
+  .blocks-selecao-servicos {
+    flex-direction: column;
+  }
+}
 @media (min-width: 320px) and (max-width: 768px) {
+  .swiper {
+    width: 80%;
+  }
+  .img-slide {
+    margin: 2rem;
+  }
   .swiper2 {
     width: 80%;
   }
@@ -481,7 +497,7 @@ footer {
     }
   }
 }
-@media (min-width: 768px) and (max-width: 1000px) {
+@media (min-width: 768px) and (max-width: 1090px) {
   .swiper2 {
     width: 92%;
   }
@@ -494,6 +510,15 @@ footer {
   .blocks-selecao-servicos {
     flex-direction: row;
   }
+  .imgs {
+    img {
+      max-height: 150px;
+    }
+  }
+  .time-de-nerds {
+    padding: 3rem;
+    background-position: bottom;
+  }
   .descubra {
     align-items: center;
     flex-direction: column;
@@ -505,7 +530,7 @@ footer {
     margin-top: 20rem;
   }
   footer {
-    height: 490px;
+    height: 390px;
     .fim {
       flex-direction: row;
       gap: 4rem;
