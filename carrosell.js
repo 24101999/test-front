@@ -3,7 +3,7 @@ const swiper = new Swiper('.swiper', {
     direction: 'horizontal',
     // cssMode:true,
     loop: true,
-    speed:100,
+    speed:400,
     // slidesPerView: 8,
     spaceBetween: 5,
 
@@ -59,7 +59,7 @@ const swiper2 = new Swiper('.swiper2', {
     direction: 'horizontal',
     // cssMode:true,
     loop: true,
-    // speed:100,
+    speed:400,
     slidesPerView: 3,
     spaceBetween:30,
 
@@ -67,7 +67,7 @@ const swiper2 = new Swiper('.swiper2', {
       // when window width is >= 320px
       320: {
         slidesPerView: 1,
-        spaceBetween: 20
+        spaceBetween: 10
       },
       // when window width is >= 480px
       480: {
