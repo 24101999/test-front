@@ -3,7 +3,7 @@ const swiper = new Swiper('.swiper', {
     direction: 'horizontal',
     // cssMode:true,
     loop: true,
-    speed:400,
+    speed:200,
     // slidesPerView: 8,
     spaceBetween: 5,
 
