@@ -1,4 +1,5 @@
 const siteMobile = document.querySelector('.nav-low-sites')
+const siteMobileButton = document.querySelector('.site-mobile-modal-titulo')
 const siteLowNav = document.querySelector('.nav-low-sites-sites')
 const span = document.getElementById('span')
 const spanSiteMoblie = document.getElementById('span-site-mobile')
@@ -30,6 +31,11 @@ infoNav.classList.toggle("active")
 span.classList.toggle("active")
 })
 
+siteMobileButton.addEventListener('click',()=>{
+    spanSiteMoblie.classList.toggle('active')
+modalSiteMoblie.classList.toggle('active')
+})
+
 spanMobile.addEventListener('click',()=>{
     modalMobile.classList.toggle('active')
     header.classList.toggle('active')
@@ -39,7 +45,7 @@ btmodal.addEventListener('click',()=>{
     modalMobile.classList.remove('active')
     header.classList.remove('active')
 })
-spanSiteMoblie.addEventListener('click',()=>{
-    spanSiteMoblie.classList.toggle('active')
-modalSiteMoblie.classList.toggle('active')
-})
+// spanSiteMoblie.addEventListener('click',()=>{
+//     spanSiteMoblie.classList.toggle('active')
+// modalSiteMoblie.classList.toggle('active')
+// })
