@@ -426,10 +426,11 @@ footer {
 }
 @media (min-width: 320px) and (max-width: 768px) {
   .swiper {
-    width: 80%;
+    width: 100%;
   }
   .img-slide {
-    margin: 2rem;
+    margin: 0;
+    padding: 3rem;
   }
   .swiper2 {
     width: 80%;
@@ -498,8 +499,18 @@ footer {
   }
 }
 @media (min-width: 768px) and (max-width: 1090px) {
+  .swiper {
+    width: 100%;
+  }
   .swiper2 {
     width: 92%;
+  }
+  .img-slide {
+    margin: 0;
+    padding: 10px;
+    p {
+      font-size: 14px;
+    }
   }
   #button-next-normal {
     display: none;

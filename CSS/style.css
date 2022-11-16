@@ -370,6 +370,7 @@ footer {
     display: flex;
     align-items: center;
     color: #5eb7f2;
+    cursor: pointer;
   }
   .mobile-modal .content-modal-baixo {
     color: #5eb7f2;
