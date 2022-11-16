@@ -90,8 +90,8 @@ header .mobile-modal .content-modal-baixo {
 }
 
 header .banner {
-  background-image: url(../IMG/banner.png);
-  height: 500px;
+  background-image: url(../IMG/banner_resized.jpg);
+  height: 600px;
   position: relative;
   background-repeat: no-repeat;
   background-size: cover;

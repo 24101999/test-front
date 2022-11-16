@@ -4,6 +4,10 @@ section {
   font-family: "Roboto Slab", serif;
 }
 
+.blocks-selecao-servicos-mobile {
+  display: none;
+}
+
 .descubra {
   font-family: "Roboto Slab", serif;
   gap: 1rem;
@@ -118,10 +122,12 @@ section {
 
 #button-next-normal {
   display: block;
+  background: none !important;
 }
 
 #button-prev-normal {
   display: block;
+  background: none !important;
 }
 
 .swiper-button-next {
@@ -156,6 +162,10 @@ section {
   height: 10px !important;
 }
 
+.swiper-wapper {
+  padding: 5px;
+}
+
 .swiper-scrollbar-drag {
   height: 10px !important;
   border-radius: 0 !important;
@@ -169,12 +179,12 @@ section {
 
 .img-slide {
   background-color: #e8e8e8;
-  padding: 1rem;
+  padding: 10px;
   display: flex;
   flex-direction: column;
   gap: 0.3rem;
   text-align: center;
-  margin: 1rem;
+  margin: 5px;
 }
 
 .ver-todos {
@@ -193,8 +203,9 @@ section {
 }
 
 .time-de-nerds {
-  background-image: url("/IMG/bg time.png");
+  background-image: url("../IMG/time.png");
   background-repeat: no-repeat;
+  background-size: cover;
   padding: 5rem;
   text-align: start;
 }
@@ -241,6 +252,7 @@ section {
   background-repeat: no-repeat;
   height: 200px;
   max-width: 100%;
+  background-size: cover;
 }
 
 .selecao-servicos .blocks-selecao-servicos .block-1 h3 {
@@ -280,12 +292,14 @@ section {
   background-image: url("../IMG/Imagem card serviço-2.png");
   height: 200px;
   max-width: 100%;
+  background-size: cover;
 }
 
 .selecao-servicos .blocks-selecao-servicos .block-3 {
   background-repeat: no-repeat;
   background-image: url("../IMG/Imagem card serviço.png");
   height: 200px;
+  background-size: cover;
   max-width: 100%;
 }
 
@@ -293,6 +307,7 @@ section {
   margin-top: 5rem;
   background-image: url("../IMG/BG CONHEÇA.png");
   background-repeat: no-repeat;
+  background-size: cover;
   max-width: 100%;
   padding: 5rem;
 }
@@ -344,7 +359,7 @@ section {
 }
 
 .form {
-  padding: 2rem;
+  padding: 2rem 5rem;
   background-color: #f3f3f3;
   margin-top: 15rem;
   display: flex;
@@ -472,8 +487,9 @@ footer .icons-footer i {
   color: #71d8ff;
 }
 
-@media (min-width: 475px) and (max-width: 767px) {
+@media (min-width: 450px) and (max-width: 767px) {
   .blocks-selecao-servicos {
+    display: flex !important;
     flex-direction: row !important;
   }
 }
@@ -481,10 +497,72 @@ footer .icons-footer i {
 @media (min-width: 320px) and (max-width: 475px) {
   .blocks-selecao-servicos {
     flex-direction: column;
+    display: none;
   }
 }
 
 @media (min-width: 320px) and (max-width: 768px) {
+  .blocks-selecao-servicos {
+    display: none !important;
+  }
+  .blocks-selecao-servicos-mobile {
+    overflow: auto;
+    flex-direction: column;
+    display: flex;
+    gap: 1rem;
+  }
+  .blocks-selecao-servicos-mobile::-webkit-scrollbar {
+    display: none;
+  }
+  .blocks-selecao-servicos-mobile .block-1 {
+    background-image: url("../IMG/Imagem card serviço-1.png");
+    background-repeat: no-repeat;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    max-width: 100%;
+  }
+  .blocks-selecao-servicos-mobile .block-1 h3 {
+    margin: 0;
+  }
+  .blocks-selecao-servicos-mobile .int-block {
+    padding: 5px;
+    background-color: #283137;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    padding: 20px;
+  }
+  .blocks-selecao-servicos-mobile .int-block h3 {
+    color: #fff;
+    margin: 0;
+  }
+  .blocks-selecao-servicos-mobile .int-block p {
+    color: #fff;
+    font-size: small;
+  }
+  .blocks-selecao-servicos-mobile .int-block p strong {
+    text-align: start;
+    color: #00aeef;
+  }
+  .blocks-selecao-servicos-mobile .int-block p p:nth-child(1) {
+    text-align: start;
+  }
+  .blocks-selecao-servicos-mobile .block-2 {
+    background-repeat: no-repeat;
+    background-image: url("../IMG/Imagem card serviço-2.png");
+    height: 200px;
+    background-size: cover;
+    max-width: 100%;
+  }
+  .blocks-selecao-servicos-mobile .block-3 {
+    background-repeat: no-repeat;
+    background-image: url("../IMG/Imagem card serviço.png");
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    max-width: 100%;
+  }
   .carrossel {
     background: none;
   }
@@ -517,9 +595,16 @@ footer .icons-footer i {
   .descubra .descubra-ver-sevicos {
     max-width: 100%;
   }
+  .descubra .descubra-lines-centro {
+    display: none;
+  }
+  .descubra .block-descubra-servicos img {
+    max-width: 100%;
+  }
   .time-de-nerds {
-    padding: 6px;
-    background-size: contain;
+    padding: 1rem;
+    background-size: cover;
+    background-position: center;
     background-color: #e9e9e9;
   }
   .time-de-nerds h3 {
@@ -528,15 +613,16 @@ footer .icons-footer i {
   .time-de-nerds p {
     width: 100%;
   }
-  .blocks-selecao-servicos {
-    flex-direction: column;
-  }
   .form {
     flex-direction: column;
     margin-top: 32rem;
+    padding: 2rem 3rem;
   }
   .form button {
-    width: 50%;
+    width: 100% !important;
+  }
+  .ver-todos button {
+    margin: 1rem;
   }
   .conheca-visao {
     padding: 1rem;
@@ -549,6 +635,7 @@ footer .icons-footer i {
     padding: 1rem;
     height: 1000px;
     justify-content: flex-start;
+    align-items: flex-start;
   }
   footer .fim {
     flex-direction: column;
@@ -558,11 +645,15 @@ footer .icons-footer i {
     flex-direction: column;
   }
   footer .line-footer {
+    width: 80%;
     flex-direction: column;
   }
 }
 
-@media (min-width: 768px) and (max-width: 1090px) {
+@media (min-width: 768px) and (max-width: 1020px) {
+  .blocks-selecao-servicos-mobile {
+    display: none;
+  }
   .swiper {
     width: 100%;
   }
@@ -597,6 +688,7 @@ footer .icons-footer i {
     flex-direction: column;
   }
   .descubra .descubra-ver-sevicos {
+    align-items: center;
     max-width: 100% !important;
   }
   .form {
@@ -604,6 +696,11 @@ footer .icons-footer i {
   }
   footer {
     height: 390px;
+    align-items: center;
+    padding: 1rem 1rem;
+  }
+  footer .line-footer {
+    width: 100%;
   }
   footer .fim {
     flex-direction: row;

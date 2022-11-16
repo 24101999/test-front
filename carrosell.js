@@ -15,7 +15,7 @@ const swiper = new Swiper('.swiper', {
       },
       // when window width is >= 480px
       480: {
-        slidesPerView: 1,
+        slidesPerView: 3,
         spaceBetween: 30
       },
       // when window width is >= 640px
@@ -67,7 +67,7 @@ const swiper2 = new Swiper('.swiper2', {
       // when window width is >= 320px
       320: {
         slidesPerView: 1,
-        spaceBetween: 10
+        spaceBetween: 30
       },
       // when window width is >= 480px
       480: {
@@ -102,3 +102,53 @@ const swiper2 = new Swiper('.swiper2', {
       el: '.swiper-scrollbar',
     },
   });
+  
+const swiper3 = new Swiper('.swiper3', {
+    // Optional parameters
+    direction: 'horizontal',
+    // cssMode:true,
+    loop: true,
+    speed:400,
+    slidesPerView: 3,
+    spaceBetween:30,
+
+    breakpoints: {
+      // when window width is >= 320px
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 30
+      },
+      // when window width is >= 480px
+      480: {
+        slidesPerView: 1,
+        spaceBetween: 30
+      },
+      // when window width is >= 640px
+      640: {
+        slidesPerView: 3,
+        spaceBetween: 30
+      },
+      1020: {
+        slidesPerView: 3,
+        spaceBetween: 30
+      }
+    },
+  
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+    },
+  
+    // Navigation arrows
+
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  
+    // And if we need scrollbar
+    scrollbar: {
+      el: '.swiper-scrollbar',
+    },
+  });
+  
