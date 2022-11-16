@@ -2,6 +2,9 @@
   button {
     cursor: pointer;
   }
+  a {
+    text-decoration: none;
+  }
 }
 body {
   margin: 0;
@@ -124,6 +127,13 @@ header {
     }
   }
   .logo-nav-top {
+    a {
+      color: #2c3a2f;
+      text-decoration: none;
+      &:hover {
+        color: #2c3a2f;
+      }
+    }
     img {
       margin-right: 20px;
     }
@@ -171,6 +181,12 @@ header {
     align-items: center;
   }
   .nav-low-sites-links {
+    a {
+      color: #fff;
+      &:hover {
+        color: #fff;
+      }
+    }
     display: flex;
     gap: 2rem;
   }
@@ -280,6 +296,13 @@ footer {
     }
   }
   .mobile-modal {
+    a {
+      color: #ffffff;
+      text-decoration: none;
+      &:hover {
+        color: #ffffff;
+      }
+    }
     transition: 0.4s all;
     opacity: 0;
     height: 100%;
@@ -354,6 +377,12 @@ footer {
       cursor: pointer;
     }
     .content-modal-baixo {
+      a {
+        color: #5eb7f2;
+        &:hover {
+          color: #5eb7f2;
+        }
+      }
       color: #5eb7f2;
       display: flex;
       flex-direction: column;

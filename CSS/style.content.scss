@@ -289,6 +289,7 @@ section {
     padding: 14px 30px;
     background-color: #0089bc;
     color: #fff;
+    border: none;
   }
 }
 
@@ -321,6 +322,7 @@ section {
   background-color: #f3f3f3;
   margin-top: 15rem;
   display: flex;
+  gap: 3rem;
   align-items: center;
   h2 {
     font-size: 32px;
@@ -385,6 +387,15 @@ footer {
       }
     }
     .item-footer {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      a {
+        color: #00aeef;
+        &:hover {
+          color: #00aeef;
+        }
+      }
       p {
         color: #00aeef;
       }

@@ -327,6 +327,7 @@ section {
   padding: 14px 30px;
   background-color: #0089bc;
   color: #fff;
+  border: none;
 }
 
 .end {
@@ -363,6 +364,7 @@ section {
   background-color: #f3f3f3;
   margin-top: 15rem;
   display: flex;
+  gap: 3rem;
   align-items: center;
 }
 
@@ -439,6 +441,20 @@ footer .items-footer h2 {
 }
 
 footer .items-footer h2 p {
+  color: #00aeef;
+}
+
+footer .items-footer .item-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+footer .items-footer .item-footer a {
+  color: #00aeef;
+}
+
+footer .items-footer .item-footer a:hover {
   color: #00aeef;
 }
 
